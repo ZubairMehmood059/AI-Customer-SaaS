@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --color-brand-mint: #4ade80;
+  --color-brand-teal: #2dd4bf;
+  --color-brand-charcoal: #0f172a;
+  --color-brand-slate: #1e293b;
+  --color-brand-tint-mint: #f0fdf4;
+  --color-brand-tint-teal: #f0fdfa;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-feature-settings: 'cv02' 1, 'cv03' 1, 'cv04' 1, 'cv11' 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  line-height: 1.6;
+  letter-spacing: -0.011em;
+}
+
+/* Readability optimizations across all pages */
+h1, h2, h3, h4 {
+  text-wrap: balance;
+  letter-spacing: -0.022em;
+}
+
+p, li, blockquote {
+  text-wrap: pretty;
+}
+
+/* Ensure numbers in metrics and tables align vertically for enhanced legibility */
+.tabular-nums, table, [data-tabular="true"] {
+  font-variant-numeric: tabular-nums;
+}
+
+/* AI Operations cybernetic background (replaces former grid lines) */
+.tech-grid-pattern,
+.cyber-bg-image {
+  background-image: 
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.82), rgba(15, 23, 42, 0.94)),
+    url('/cyber_dashboard_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tech-grid-pattern-light {
+  background-image: 
+    linear-gradient(to bottom, rgba(248, 250, 252, 0.92), rgba(241, 245, 249, 0.96)),
+    url('/cyber_dashboard_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.45);
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Nexora AI",
+  "description": "Intelligent Support. Real-Time Insight. AI-powered customer support SaaS platform with unified inbox, RAG knowledge retrieval, real-time analytics, and admin control.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
